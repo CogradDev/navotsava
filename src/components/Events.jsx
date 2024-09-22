@@ -41,7 +41,7 @@ export const EventDetails = () => {
               </div>
 
               {/* Venue */}
-              <div className="flex justify-start items-center ">
+              <div className="flex justify-start items-center space-x-4">
                 <div className="text-3xl sm:text-4xl text-blue-500 transition-transform duration-300 transform hover:scale-110">
                   <FaMapMarkerAlt />
                 </div>
