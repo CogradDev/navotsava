@@ -2,7 +2,7 @@ import React from "react";
 
 const Moto = () => {
   return (
-    <section className="bg-gradient-to-r from-orange-200 via-white to-green-200 antialiased py-8 md:py-16">
+    <section className="bg-gradient-to-r from-orange-100 via-blue-100 to-green-100 antialiased py-8 md:py-16">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Connect Section */}

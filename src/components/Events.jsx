@@ -21,7 +21,7 @@ export const EventDetails = () => {
 
             <div className="space-y-6">
               {/* Mandal */}
-              <div className="flex justify-center md:justify-start items-center space-x-4">
+              <div className="flex  justify-start items-center space-x-4">
                 <div className="text-3xl sm:text-4xl text-blue-500 transition-transform duration-300 transform hover:scale-110">
                   <FaMapMarkedAlt />
                 </div>
@@ -31,23 +31,22 @@ export const EventDetails = () => {
               </div>
 
               {/* Time */}
-              <div className="flex justify-center md:justify-start items-center space-x-4">
+              <div className="flex justify-start items-center space-x-4">
                 <div className="text-3xl sm:text-4xl text-blue-500 transition-transform duration-300 transform hover:scale-110">
                   <FaClock />
                 </div>
                 <div className="text-lg sm:text-xl lg:text-2xl text-gray-800">
-                  <span className="font-semibold">Time:</span> 09:00 AM - 5:00
-                  PM
+                  <span className="font-semibold"></span> 09:00 AM - 5:00 PM
                 </div>
               </div>
 
               {/* Venue */}
-              <div className="flex justify-center md:justify-start items-center space-x-4">
+              <div className="flex justify-start items-center ">
                 <div className="text-3xl sm:text-4xl text-blue-500 transition-transform duration-300 transform hover:scale-110">
                   <FaMapMarkerAlt />
                 </div>
-                <div className="text-lg sm:text-xl lg:text-2xl text-gray-800">
-                  <span className="font-semibold">Venue:</span> Gautam Buddha
+                <div className="text-lg sm:text-xl lg:text-2xl space-y-2 text-gray-800">
+                  <span className="font-semibold"></span> Gautam Buddha
                   University, Greater Noida (U.P.)
                 </div>
               </div>

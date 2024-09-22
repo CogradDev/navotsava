@@ -16,16 +16,16 @@ export const EventAgenda = () => {
   ];
 
   return (
-    <section className="bg-green-100 text-gray-800 py-12 md:py-16">
+    <section className="bg-green-100 text-green-800 py-12 md:py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-12">
         {/* Header Section */}
         <div className="flex items-center justify-center mb-12 md:mb-24">
           {/* Small "Agenda" text */}
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-green-800">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-green-700">
             Agenda
           </h2>
           {/* Gradient Line (hidden on small screens) */}
-          <div className="hidden md:flex flex-grow h-1 mx-12 sm:mx-24 bg-gradient-to-r from-green-500 via-orange-500 to-blue-500"></div>
+          <div className="hidden md:flex flex-grow h-1 mx-8 sm:mx-24 bg-gradient-to-r from-green-500 via-orange-500 to-blue-500"></div>
           {/* Large "Agenda" text, hidden on small screens */}
           <h2 className="hidden md:block text-6xl lg:text-8xl font-bold text-gray-200">
             Agenda
@@ -33,16 +33,16 @@ export const EventAgenda = () => {
         </div>
 
         {/* Agenda Items */}
-        <div className="space-y-6">
+        <div className="space-y-4">
           {agendaItems.map((item, index) => (
             <div
               key={index}
-              className="flex justify-between items-center bg-white p-4 sm:p-6 rounded-lg shadow-lg transition-transform duration-300 hover:shadow-xl transform hover:-translate-y-2 hover:bg-indigo-50"
+              className="flex flex-col sm:flex-row justify-between items-start sm:items-center bg-white p-4 sm:p-6 rounded-lg shadow-lg transition-transform duration-300 hover:shadow-xl transform hover:-translate-y-2 hover:bg-indigo-50"
             >
-              <span className="text-lg sm:text-xl font-semibold text-green-600">
+              <span className="text-base sm:text-lg font-semibold text-green-600 mb-2 sm:mb-0">
                 {item.time}
               </span>
-              <span className="text-lg sm:text-xl text-gray-800">
+              <span className="text-base sm:text-lg text-gray-800">
                 {item.title}
               </span>
             </div>
