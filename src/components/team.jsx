@@ -46,7 +46,7 @@ const TeamMembers = () => {
         {/* Header Section */}
         <div className="flex items-center justify-center mb-12 md:mb-24">
           {/* Small "Agenda" text */}
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-black">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-blue-600">
             Eminent Guests
           </h2>
           {/* Gradient Line (hidden on small screens) */}

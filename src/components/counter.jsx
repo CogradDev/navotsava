@@ -30,7 +30,7 @@ const CountdownTimer = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center w-full px-4 md:px-10 py-6 bg-gradient-to-r from-white via-blue-300 to-white rounded-lg shadow-lg">
+    <div className="flex flex-col md:flex-row justify-between items-center w-full px-4 md:px-10 py-6 bg-gradient-to-r from-white via-blue-200 to-white rounded-lg shadow-lg">
       {/* Left Side Text */}
       <div className="flex flex-col text-blue-600 font-semibold mb-4 md:mb-0 text-center md:text-left">
         <h2 className="text-3xl md:text-5xl mb-2">Conference Date</h2>
