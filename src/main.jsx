@@ -22,11 +22,12 @@ createRoot(document.getElementById("root")).render(
     <CountdownTimer />
     <Moto />
     <EventDetails />
+    <ApplyForAward />
+
     <EventAgenda />
     <TeamMembers />
     <MeetTeam />
     <Payment />
-    <ApplyForAward />
     <FeedbackForm />
     <Footer />
   </StrictMode>

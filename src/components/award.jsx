@@ -2,7 +2,7 @@ import React from "react";
 
 const ApplyForAward = () => {
   return (
-    <div className="w-full mx-auto p-6 mt-4 mb-4 bg-gradient-to-r from-orange-200 via-white to-green-200 text-gray-900 shadow-lg flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 ">
+    <div className="w-full mx-auto p-6 mt-4 bg-gradient-to-r from-orange-200 via-white to-green-200 text-gray-900 shadow-lg flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 ">
       {/* Left Section: Award Image */}
       <div className="md:w-1/2 w-full flex justify-center">
         <img
