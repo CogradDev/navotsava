@@ -14,6 +14,7 @@ import Moto from "./components/moto.jsx";
 import Footer from "./components/footer.jsx";
 import MeetTeam from "./components/meetteam.jsx";
 import CountdownTimer from "./components/counter.jsx";
+import ApplyForAward from "./components/award.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -25,6 +26,7 @@ createRoot(document.getElementById("root")).render(
     <TeamMembers />
     <MeetTeam />
     <Payment />
+    <ApplyForAward />
     <FeedbackForm />
     <Footer />
   </StrictMode>

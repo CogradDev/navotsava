@@ -32,47 +32,47 @@ const MeetTeam = () => {
   return (
     <section className="bg-gradient-to-r from-orange-200 via-white to-green-200 antialiased py-8 md:py-16">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-        <h1 className="text-center text-4xl md:text-6xl font-bold text-orange-500 mb-8 md:mb-12">
+        <h1 className="text-center text-4xl md:text-5xl font-extrabold text-orange-500 mb-8 md:mb-12">
           Meet the Team
         </h1>
 
         <Slider {...settings}>
           {/* Connect Section */}
           <div className="px-3">
-            <div className="rounded-lg bg-blue-700 p-2 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+            <div className="rounded-lg bg-blue-700 p-2 shadow-md ">
               <img src="/main.jpg" alt="" />
             </div>
           </div>
 
           {/* Collaborate Section */}
           <div className="px-3">
-            <div className="rounded-lg bg-purple-700 p-2 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+            <div className="rounded-lg bg-purple-700 p-2 shadow-md ">
               <img src="/stage.jpg" alt="" />
             </div>
           </div>
 
           {/* Contribute Section */}
           <div className="px-3">
-            <div className="rounded-lg bg-yellow-400 p-2 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+            <div className="rounded-lg bg-yellow-400 p-2 shadow-md ">
               <img src="/registeration.jpg" alt="" />
             </div>
           </div>
 
           {/* Additional sections */}
           <div className="px-3">
-            <div className="rounded-lg bg-red-600 p-2 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+            <div className="rounded-lg bg-red-600 p-2 shadow-md ">
               <img src="/discipline.jpg" alt="" />
             </div>
           </div>
 
           <div className="px-3">
-            <div className="rounded-lg bg-blue-200 p-2 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+            <div className="rounded-lg bg-blue-200 p-2 shadow-md ">
               <img src="/venue.jpg" alt="" />
             </div>
           </div>
 
           <div className="px-3">
-            <div className="rounded-lg bg-teal-700 p-2 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+            <div className="rounded-lg bg-teal-700 p-2 shadow-md ">
               <img src="/food.jpg" alt="" />
             </div>
           </div>

@@ -51,17 +51,18 @@ const Footer = () => {
 
         <hr className="border-gray-400 my-6 md:my-10" />
 
-        <div className="text-center text-sm text-gray-200">
+        <div className="text-center text-md text-gray-50">
           <p>
             &copy; Made with love by{"  "}
             <a
               href="https://cograd.in/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white text-blue-900 transition duration-200"
+              className="hover:text-white text-blue-700 transition duration-200"
             >
-              Cograd
+              Cograd.
             </a>
+            <p>(A Navodayans' Initiative)</p>
           </p>
         </div>
       </div>

@@ -4,32 +4,38 @@ const teamMembers = [
   {
     name: "Alice Johnson",
     position: "Project Manager",
-    photo: "https://via.placeholder.com/150",
+    photo:
+      "https://i0.wp.com/blog.10times.com/wp-content/uploads/2022/05/speaker.jpg?resize=1296%2C700&ssl=1",
   },
   {
     name: "Bob Smith",
     position: "Frontend Developer",
-    photo: "https://via.placeholder.com/150",
+    photo:
+      "https://i0.wp.com/blog.10times.com/wp-content/uploads/2022/05/speaker.jpg?resize=1296%2C700&ssl=1",
   },
   {
     name: "Charlie Brown",
     position: "Backend Developer",
-    photo: "https://via.placeholder.com/150",
+    photo:
+      "https://i0.wp.com/blog.10times.com/wp-content/uploads/2022/05/speaker.jpg?resize=1296%2C700&ssl=1",
   },
   {
     name: "David Wilson",
     position: "UI/UX Designer",
-    photo: "https://via.placeholder.com/150",
+    photo:
+      "https://i0.wp.com/blog.10times.com/wp-content/uploads/2022/05/speaker.jpg?resize=1296%2C700&ssl=1",
   },
   {
     name: "David Wilson",
     position: "UI/UX Designer",
-    photo: "https://via.placeholder.com/150",
+    photo:
+      "https://i0.wp.com/blog.10times.com/wp-content/uploads/2022/05/speaker.jpg?resize=1296%2C700&ssl=1",
   },
   {
     name: "David Wilson",
     position: "UI/UX Designer",
-    photo: "https://via.placeholder.com/150",
+    photo:
+      "https://i0.wp.com/blog.10times.com/wp-content/uploads/2022/05/speaker.jpg?resize=1296%2C700&ssl=1",
   },
 ];
 
