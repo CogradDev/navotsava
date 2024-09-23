@@ -29,14 +29,14 @@ const FeedbackForm = () => {
   };
 
   return (
-    <div className=" flex flex-col justify-center items-center bg-gray-50 px-4 md:px-8 py-8">
+    <div className=" flex flex-col justify-center items-center bg-white px-4 md:px-8 py-8">
       {/* Feedback Title */}
       <h2 className="text-3xl  self-start ml-24 sm:text-4xl md:text-5xl lg:text-6xl mb-10 font-extrabold text-gray-900 text-center drop-shadow-lg">
         Feedback Form
       </h2>
 
       {/* Form Container */}
-      <div className="max-w-full sm:max-w-md w-full bg-white rounded-xl shadow-2xl p-6 md:p-10 ">
+      <div className="max-w-full sm:max-w-md w-full bg-gray-50 border-2 border-gray-300 rounded-xl shadow-2xl p-6 md:p-10 ">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="space-y-2">
             <label className="block text-lg md:text-xl font-medium text-gray-700">
