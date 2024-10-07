@@ -3,7 +3,7 @@ import { FaMapMarkedAlt, FaClock, FaMapMarkerAlt } from "react-icons/fa";
 
 export const EventDetails = () => {
   return (
-    <section className="bg-white text-gray-800 py-12 md:py-16">
+    <section className="bg-gray-100 text-gray-800 py-12 md:py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-12">
         {/* Event Header */}
         <div className="flex flex-col md:flex-row items-center">
