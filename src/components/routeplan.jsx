@@ -71,7 +71,7 @@ const routes = [
       { name: "Etawah", coords: [26.7779, 79.0214] },
       { name: "Auraiya", coords: [26.4631, 79.5094] },
       { name: "Jalaun", coords: [26.1445, 79.3366] },
-      { name: "Hamirpur", coords: [31.6862, 76.5213] },
+      { name: "Hamirpur", coords: [25.7913, 80.0088] },
       { name: "Banda", coords: [25.4753, 80.3358] },
       { name: "Chitrakoot", coords: [25.209, 80.9128] },
       { name: "Mahoba", coords: [25.2927, 79.8707] },
