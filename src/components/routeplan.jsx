@@ -55,7 +55,7 @@ const routes = [
       { name: "Agra", coords: [27.1767, 78.0081] },
       { name: "Firozabad", coords: [27.1591, 78.395] },
       { name: "Mainpuri", coords: [27.231, 79.0288] },
-      { name: "Etah", coords: [27.5607, 78.6659] },
+      { name: "Etah", coords: [27.5625, 78.6654] },
       { name: "Kasganj", coords: [27.8054, 78.6462] },
       { name: "Hathras", coords: [27.5977, 78.0523] },
       { name: "Aligarh", coords: [27.8974, 78.088] },
@@ -71,7 +71,7 @@ const routes = [
       { name: "Etawah", coords: [26.7779, 79.0214] },
       { name: "Auraiya", coords: [26.4631, 79.5094] },
       { name: "Jalaun", coords: [26.1445, 79.3366] },
-      { name: "Hamirpur", coords: [25.9611, 80.1551] },
+      { name: "Hamirpur", coords: [31.6862, 76.5213] },
       { name: "Banda", coords: [25.4753, 80.3358] },
       { name: "Chitrakoot", coords: [25.209, 80.9128] },
       { name: "Mahoba", coords: [25.2927, 79.8707] },
@@ -92,8 +92,8 @@ const getCustomIcon = (color) => {
 };
 
 const RoutePlan = () => {
-  const indiaCenter = [23.5937, 78.9629];
-  const zoomLevel = 6;
+  const indiaCenter = [28.7041, 77.1025];
+  const zoomLevel = 7;
 
   return (
     <div className="min-h-screen bg-white py-8 px-4">
