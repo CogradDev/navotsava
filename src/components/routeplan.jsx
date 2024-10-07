@@ -78,7 +78,6 @@ const routes = [
       { name: "Jhansi", coords: [25.4486, 78.5696] },
       { name: "Lalitpur", coords: [24.6902, 78.4195] },
       { name: "Gwalior", coords: [26.2183, 78.1828] },
-      { name: "Agra", coords: [27.1767, 78.0081] },
       { name: "Delhi", coords: [28.6139, 77.209] },
     ],
   },
