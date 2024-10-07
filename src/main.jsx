@@ -26,7 +26,6 @@ createRoot(document.getElementById("root")).render(
     <RoutePlan />
     <ApplyForAward />
     <EventAgenda />
-    <TeamMembers />
     <MeetTeam />
     <Payment />
     <FeedbackForm />

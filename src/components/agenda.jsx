@@ -22,13 +22,13 @@ export const EventAgenda = () => {
         <div className="flex items-center justify-center mb-12 md:mb-24">
           {/* Small "Agenda" text */}
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-green-700">
-            Agenda
+            Program Schedule
           </h2>
           {/* Gradient Line (hidden on small screens) */}
           <div className="hidden md:flex flex-grow h-1 mx-8 sm:mx-24 bg-gradient-to-r from-green-500 via-orange-500 to-blue-500"></div>
           {/* Large "Agenda" text, hidden on small screens */}
           <h2 className="hidden md:block text-6xl lg:text-8xl font-bold text-gray-200">
-            Agenda
+            Schedule
           </h2>
         </div>
 

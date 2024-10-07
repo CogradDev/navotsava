@@ -26,7 +26,7 @@ export const EventDetails = () => {
                   <FaMapMarkedAlt />
                 </div>
                 <div className="text-lg sm:text-xl lg:text-2xl text-gray-800">
-                  <span className="font-bold">Meerut Mandal</span>
+                  <span className="font-bold">Meerut Saharanpur Mandal</span>
                 </div>
               </div>
 
@@ -55,11 +55,11 @@ export const EventDetails = () => {
 
           {/* Right Div: Image Section */}
           <div className="md:w-1/2 flex justify-center items-center">
-            <div className="relative overflow-hidden rounded-full h-52 w-52 sm:h-64 sm:w-64 md:h-80 md:w-80 lg:h-96 lg:w-96">
+            <div className="relative overflow-hidden sm:h-64 sm:w-64 md:h-80 md:w-80 lg:h-96 lg:w-96">
               <img
-                src="/event.jpg"
+                src="/about.jpg"
                 alt="Event"
-                className="w-full h-full object-cover border-2 rounded-full border-blue-600"
+                className="w-full h-full object-cover border-2 rounded-xl border-gray-600"
               />
             </div>
           </div>
