@@ -4,11 +4,11 @@ const ApplyForAward = () => {
   return (
     <div className="w-full mx-auto p-6 mt-4 bg-gradient-to-r from-orange-200 via-white to-green-200 text-gray-900 shadow-lg flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 ">
       {/* Left Section: Award Image */}
-      <div className="md:w-1/2 w-full flex justify-center">
+      <div className="md:w-1/2 w-full  flex justify-center">
         <img
-          src="/award.jpg" // Placeholder image URL, replace with actual award image
+          src="/yatra1.jpg" // Placeholder image URL, replace with actual award image
           alt="Navotsav 2024 Award"
-          className="rounded-lg  object-cover w-64 h-64 md:w-72 md:h-72 "
+          className="rounded-lg border-2 border-orange-500  w-64 h-72 md:w-80 md:h-96 "
         />
       </div>
 
