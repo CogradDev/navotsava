@@ -17,8 +17,8 @@ export const Tagline = () => {
         />
       </div>
 
-      {/* Logo (Positioned at the top on mobile, left on larger screens) */}
-      <div className="absolute top-4 left-4 sm:top-2 sm:left-24 p-4">
+      {/* Logo (Positioned at the top on mobile, shifted right on larger screens) */}
+      <div className="absolute top-2 left-0 sm:top-2 sm:left-36 p-4">
         <img
           src="./logo.png"
           alt="Event Logo"
@@ -27,10 +27,10 @@ export const Tagline = () => {
       </div>
 
       {/* Content Overlay */}
-      <div className="relative text-center px-6 space-y-6 z-10">
+      <div className="relative text-center px-6 md:space-y-12 space-y-16 z-10">
         <div className="mb-64 md:mb-80 sm:mb-64">
           <h1
-            className="text-6xl font-extrabold font-times sm:text-8xl mb-4 text-white"
+            className="text-6xl font-extrabold font-times sm:text-8xl  text-white"
             style={{
               textShadow:
                 "0 0 10px rgba(255, 153, 51, 0.8), 0 0 20px rgba(255, 153, 51, 0.8)", // Saffron shadow
@@ -62,7 +62,7 @@ export const Tagline = () => {
         </a>
 
         {/* Decorative Line */}
-        <div className="h-1 w-32 sm:w-40 mx-auto bg-blue-600 rounded-lg"></div>
+        {/* <div className="h-1 w-32 sm:w-40 mx-auto bg-blue-600 rounded-lg"></div> */}
       </div>
     </section>
   );
