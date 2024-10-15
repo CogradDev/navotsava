@@ -17,12 +17,12 @@ export const Tagline = () => {
         />
       </div>
 
-      {/* Logo (Hidden on mobile, visible on larger screens) */}
-      <div className="absolute left-32 top-1 p-4 hidden md:block">
+      {/* Logo (Positioned at the top on mobile, left on larger screens) */}
+      <div className="absolute top-4 left-4 sm:top-2 sm:left-24 p-4">
         <img
           src="./logo.png"
           alt="Event Logo"
-          className="w-30 h-36 object-cover"
+          className="w-22 h-24 object-cover sm:w-32 sm:h-36"
         />
       </div>
 
@@ -33,12 +33,12 @@ export const Tagline = () => {
             className="text-6xl font-extrabold font-times sm:text-8xl mb-4 text-white"
             style={{
               textShadow:
-                "0 0 10px rgba(0, 112, 255, 0.8), 0 0 20px rgba(0, 112, 255, 0.8)",
+                "0 0 10px rgba(255, 153, 51, 0.8), 0 0 20px rgba(255, 153, 51, 0.8)", // Saffron shadow
             }}
           >
             Navotsav
           </h1>
-          <h1 className="text-3xl font-medium sm:text-4xl md:text-5xl md:mb-8 sm:mb-10 text-black">
+          <h1 className="text-3xl font-medium sm:text-4xl md:text-5xl md:mb-8 sm:mb-12 text-orange-500">
             2024
           </h1>
         </div>
