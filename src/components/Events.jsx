@@ -55,11 +55,11 @@ export const EventDetails = () => {
 
           {/* Right Div: Image Section */}
           <div className="md:w-1/2 flex justify-center items-center">
-            <div className="relative overflow-hidden sm:h-64 sm:w-64 md:h-80 md:w-80 lg:h-96 lg:w-96">
+            <div className="relative overflow-hidden sm:h-64 sm:w-64 md:h-96 md:w-96 lg:h-full lg:w-96">
               <img
-                src="/about.jpg"
+                src="/logo.jpg"
                 alt="Event"
-                className="w-full h-full object-cover border-2 rounded-xl border-gray-600"
+                className="w-full h-full object-cover "
               />
             </div>
           </div>

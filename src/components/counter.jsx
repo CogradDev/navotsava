@@ -30,9 +30,9 @@ const CountdownTimer = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center w-full px-4 md:px-10 py-6 bg-gradient-to-r from-white via-blue-200 to-white rounded-lg shadow-lg">
+    <div className="flex flex-col md:flex-row justify-between items-center w-full px-4 md:px-10 py-6 bg-gradient-to-r from-white via-red-200 to-white rounded-lg shadow-xl">
       {/* Left Side Text */}
-      <div className="flex flex-col text-blue-600 font-semibold mb-4 md:mb-0 text-center md:text-left">
+      <div className="flex flex-col text-red-700 font-bold mb-4 md:mb-0 text-center md:text-left">
         <h2 className="text-3xl md:text-5xl mb-2">Conference Date</h2>
         <p className="text-lg md:text-xl">Count Every Second Until the Event</p>
       </div>
@@ -45,10 +45,10 @@ const CountdownTimer = () => {
           return (
             <div
               key={index}
-              className="bg-blue-600 rounded-lg px-3 py-2 md:px-6 md:py-4 shadow-lg transform hover:scale-105 transition duration-300 text-center mx-2 my-2"
+              className="bg-red-600 rounded-lg px-3 py-2 md:px-6 md:py-4 shadow-lg transform hover:scale-105 transition duration-300 text-center mx-2 my-2"
             >
               <span className="text-4xl font-bold text-white">{value}</span>
-              <span className="block text-sm text-gray-100">{label}</span>
+              <span className="block text-sm text-gray-200">{label}</span>
             </div>
           );
         })}
