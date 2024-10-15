@@ -38,7 +38,7 @@ export const Tagline = () => {
           >
             Navotsav
           </h1>
-          <h1 className="text-3xl font-medium sm:text-4xl md:text-5xl md:mb-8 sm:mb-10" style={{ color: 'rgb(255, 153, 51)' }}>
+          <h1 className="text-3xl font-medium sm:text-4xl md:text-5xl md:mb-8 sm:mb-10 pb-4" style={{ color: 'rgb(255, 153, 51)' }}>
           2024
           </h1>
         </div>
