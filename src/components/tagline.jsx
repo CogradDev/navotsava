@@ -33,13 +33,13 @@ export const Tagline = () => {
             className="text-6xl font-extrabold font-times sm:text-8xl mb-4 text-white"
             style={{
               textShadow:
-                "0 0 10px rgba(0, 112, 255, 0.8), 0 0 20px rgba(0, 112, 255, 0.8)",
+                "0 0 10px rgba(255, 153, 51, 0.8), 0 0 20px rgba(255, 153, 51, 0.8)",
             }}
           >
             Navotsav
           </h1>
-          <h1 className="text-3xl font-medium sm:text-4xl md:text-5xl md:mb-8 sm:mb-10 text-black">
-            2024
+          <h1 className="text-3xl font-medium sm:text-4xl md:text-5xl md:mb-8 sm:mb-10" style={{ color: 'rgb(255, 153, 51)' }}>
+          2024
           </h1>
         </div>
 
