@@ -57,7 +57,7 @@ export const EventDetails = () => {
           <div className="md:w-1/2 flex justify-center items-center">
             <div className="relative overflow-hidden sm:h-64 sm:w-64 md:h-96 md:w-96 lg:h-full lg:w-96">
               <img
-                src="/logo.jpg"
+                src="./logonewwithoutbg.png"
                 alt="Event"
                 className="w-full h-full object-cover "
               />

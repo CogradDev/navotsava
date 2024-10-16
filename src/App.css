@@ -1,3 +1,20 @@
+:root {
+  --tea-green: #CFDBB3;
+  --cosmic-latte: #FDF5E4;
+  --ivory: #EFF5E9;
+  --baby-powder: #F8FAF6;
+  --honeydew: #D4E2CD;
+  --flower-orange: #ff944d;
+    /* Bright orange for flowers */
+    --flower-cream: #f5e6cc;
+    /* Cream color */
+    --fringe-color: #ffbb99;
+    /* Light festive orange */
+    --background-color: #fdf5e4;
+  --gradient-bottom-right: linear-gradient(135deg, #b3da8d, #F3DFA2, #FDEBC8, #F6E4D9, #BFD5B0);
+  --bright-gradient: linear-gradient(135deg, #00C9FF, #92FE9D);
+  --peach-gradient: linear-gradient(135deg, #FFB677, #FF3CBD);
+}
 .App {
   text-align: center;
 }
@@ -36,3 +53,4 @@
     transform: rotate(360deg);
   }
 }
+

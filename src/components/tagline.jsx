@@ -1,6 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+// import {logoNew} from "../assets/logo-url.png";
 
 export const Tagline = () => {
+  const navigate = useNavigate(); // Step 1: Import the useNavigate hook
+  const handleNavigation = () => {
+    navigate("/idcard"); // Step 2: Navigate to /idcard
+  };
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background GIF for large and small screens */}
@@ -20,7 +26,8 @@ export const Tagline = () => {
       {/* Logo (Positioned at the top on mobile, shifted right on larger screens) */}
       <div className="absolute top-2 left-0 sm:top-2 sm:left-36 p-4">
         <img
-          src="./logo.png"
+          // src={logoNew}
+          src="./logonewwithoutbg.png"
           alt="Event Logo"
           className="w-22 h-24 object-cover sm:w-32 sm:h-36"
         />
@@ -51,7 +58,7 @@ export const Tagline = () => {
         </h1>
 
         {/* CTA Button */}
-        <a
+        {/* <a
           href="https://id-card-generator-silk.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
@@ -59,7 +66,18 @@ export const Tagline = () => {
           <button className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 sm:px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 mt-6 sm:mt-8">
             Register Now
           </button>
-        </a>
+        </a> */}
+        <button
+        onClick={handleNavigation} // Step 3: Handle click and navigate
+        className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 sm:px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 mt-6 sm:mt-8"
+      >
+        Register Now
+      </button>
+        {/* <Link to="/idcard">
+  <button className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 sm:px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 mt-6 sm:mt-8">
+    Register Now
+  </button>
+</Link> */}
 
         {/* Decorative Line */}
         {/* <div className="h-1 w-32 sm:w-40 mx-auto bg-blue-600 rounded-lg"></div> */}
