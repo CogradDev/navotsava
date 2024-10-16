@@ -199,8 +199,8 @@ button:hover {
   color: #333;
   font-family: Roboto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  position: relative;
-  overflow: auto;
+  /* position: relative;
+  overflow: auto; */
   z-index: 1;
 }
 
