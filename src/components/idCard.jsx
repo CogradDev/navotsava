@@ -18,7 +18,9 @@ const downloadAsJPG = () => {
     return;
   }
 
-  html2canvas(node)
+  html2canvas(node,{
+    scale: 2, // Set scale to override DPR, where 2 represents 2x the normal resolution
+  })
     .then((canvas) => {
       const dataUrl = canvas.toDataURL("image/jpeg", 0.95);
       const link = document.createElement("a");
@@ -177,6 +179,7 @@ const Appy = () => {
     "Shahjahanpur",
     "Shamli",
     "Shravasti",
+    "Siddharth Nagar",
     "Sitapur-I",
     "Sitapur-II",
     "Sonbhadra",
