@@ -1,3 +1,4 @@
+import React from 'react'
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
@@ -16,10 +17,9 @@ import MeetTeam from "./components/meetteam.jsx";
 import CountdownTimer from "./components/counter.jsx";
 import ApplyForAward from "./components/award.jsx";
 import RoutePlan from "./components/routeplan.jsx";
-
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    {/* <Tagline />
+const All = () => {
+  return (
+    <><Tagline />
     <CountdownTimer />
     <Moto />
     <EventDetails />
@@ -28,8 +28,9 @@ createRoot(document.getElementById("root")).render(
     <EventAgenda />
     <MeetTeam />
     <Payment />
-    <FeedbackForm />
-    <Footer /> */}
-    <App />
-  </StrictMode>
-);
+    {/* <FeedbackForm /> */}
+    <Footer /></>
+  )
+}
+
+export default All;

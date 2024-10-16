@@ -8,7 +8,7 @@ const Payment = () => {
         <div className="lg:col-span-5 flex flex-col justify-center items-center mb-8 lg:mb-0">
           <img
             className="mb-4 h-56 w-56 rounded-xl sm:h-72 sm:w-72 md:h-80 md:w-80 lg:h-full lg:w-full object-cover shadow-lg"
-            src="/qr2.jpg"
+            src="./pamphelet.jpg"
             alt="QR Code"
           />
           <p className="text-sm text-gray-700 text-center">
