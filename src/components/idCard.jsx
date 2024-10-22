@@ -18,7 +18,7 @@ const downloadAsJPG = () => {
     return;
   }
 
-  html2canvas(node,{
+  html2canvas(node, {
     scale: 2, // Set scale to override DPR, where 2 represents 2x the normal resolution
   })
     .then((canvas) => {
@@ -126,7 +126,7 @@ const Appy = () => {
     "Bareilly",
     "Basti",
     "Bhadohi",
-    "Bharaich",
+    "Bahraich",
     "Bijnor",
     "Bulandshahr",
     "Chandauli",
