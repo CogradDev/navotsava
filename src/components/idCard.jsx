@@ -551,6 +551,7 @@ const Appy = () => {
                   type="text"
                   value={profession}
                   onChange={(e) => setProfession(e.target.value)}
+                  maxLength={50}
                   required
                 />
               </div>
@@ -560,6 +561,7 @@ const Appy = () => {
                   type="text"
                   value={location}
                   onChange={(e) => setLocation(e.target.value)}
+                  maxLength={50}
                   required
                 />
               </div>
@@ -608,8 +610,12 @@ const Appy = () => {
                   <label htmlFor="NA">NA</label>
                 </div>
               </div>
-              <div className="form-group">
-                <label>Accomodation Required:</label>
+              <div className="form-group flex-auto  ">
+                <div className="flex flex-row">
+                  <label>Accomodation Required:</label>
+                  <p className="text-xs ml-2 text-red-500">*on paid charges</p>
+                </div>
+
                 <div className="radio-container">
                   <input
                     type="radio"

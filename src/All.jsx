@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
@@ -19,18 +19,20 @@ import ApplyForAward from "./components/award.jsx";
 import RoutePlan from "./components/routeplan.jsx";
 const All = () => {
   return (
-    <><Tagline />
-    <CountdownTimer />
-    <Moto />
-    <EventDetails />
-    <RoutePlan />
-    <ApplyForAward />
-    <EventAgenda />
-    <MeetTeam />
-    <Payment />
-    {/* <FeedbackForm /> */}
-    <Footer /></>
-  )
-}
+    <>
+      <Tagline />
+      <CountdownTimer />
+      <Moto />
+      <EventDetails />
+      <RoutePlan />
+      {/* <ApplyForAward /> */}
+      <EventAgenda />
+      <MeetTeam />
+      <Payment />
+      {/* <FeedbackForm /> */}
+      <Footer />
+    </>
+  );
+};
 
 export default All;
