@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 export const Tagline = () => {
   const navigate = useNavigate();
-  const deadline = new Date("2024-11-15");
+  const deadline = new Date("2024-11-10");
   const [isRegistrationOpen, setIsRegistrationOpen] = useState(true);
 
   useEffect(() => {
@@ -80,7 +80,7 @@ export const Tagline = () => {
               Register Now
             </button>
             <p className="text-red-600 mt-8 sm:mt-4 text-2xl ">
-              Last date to register :  {deadline.toDateString()}
+              Last date to register : {deadline.toDateString()}
             </p>
           </>
         ) : (
