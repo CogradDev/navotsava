@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export const Tagline = () => {
   const navigate = useNavigate();
+  const deadline = new Date("2024-11-15");
+  const [isRegistrationOpen, setIsRegistrationOpen] = useState(true);
+
+  useEffect(() => {
+    const today = new Date();
+    // Hide "Register Now" button if the current date is past the deadline
+    if (today > deadline) {
+      setIsRegistrationOpen(false);
+    }
+  }, []);
+
   const handleNavigation = () => {
     navigate("/idcard");
   };
@@ -44,7 +55,7 @@ export const Tagline = () => {
           Navotsav
         </h1>
         <h1
-          className="text-4xl font-medium sm:text-5xl md:text-6xl mb-32 sm:mb-32"
+          className="text-4xl font-medium sm:text-5xl md:text-6xl mb-32 sm:mb-36"
           style={{ color: "rgb(255, 153, 51)" }} // Saffron color for 2024
         >
           2024
@@ -52,20 +63,29 @@ export const Tagline = () => {
       </div>
 
       {/* Main Tagline (with fixed 96px distance from 2024) */}
-      <div className="relative flex flex-col items-center z-10 mt-64">
-        <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold mb-6">
+      <div className="relative flex flex-col items-center z-10 mt-56">
+        <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold">
           <span className="text-orange-500">Connect.</span>
           <span className="text-blue-500"> Collaborate.</span>
           <span className="text-green-500"> Contribute.</span>
         </h1>
 
-        {/* CTA Button */}
-        <button
-          onClick={handleNavigation}
-          className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 sm:px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 sm:mt-8"
-        >
-          Register Now
-        </button>
+        {/* CTA Button and Deadline Message */}
+        {isRegistrationOpen ? (
+          <>
+            <button
+              onClick={handleNavigation}
+              className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 sm:px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 "
+            >
+              Register Now
+            </button>
+            <p className="text-red-600 mt-8 sm:mt-4 text-2xl ">
+              Last date to register :  {deadline.toDateString()}
+            </p>
+          </>
+        ) : (
+          <p className="text-red-500 mt-4 text-lg">Registration Closed</p>
+        )}
       </div>
     </section>
   );
