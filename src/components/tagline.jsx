@@ -8,7 +8,6 @@ export const Tagline = () => {
 
   useEffect(() => {
     const today = new Date();
-    // Hide "Register Now" button if the current date is past the deadline
     if (today > deadline) {
       setIsRegistrationOpen(false);
     }
@@ -80,7 +79,7 @@ export const Tagline = () => {
               Register Now
             </button>
             <p className="text-red-600 mt-8 sm:mt-4 text-2xl ">
-              Last date to register : {deadline.toDateString()}
+              Register Before : {deadline.toDateString()}
             </p>
           </>
         ) : (

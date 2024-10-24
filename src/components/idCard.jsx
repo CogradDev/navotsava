@@ -74,7 +74,7 @@ const Appy = () => {
     Bareilly: ["Bareilly", "Badaun", "Pilibhit", "Shahjahanpur"],
     Basti: ["Basti", "Siddharth Nagar", "Santkabir Nagar"],
     Chitrakoot: ["Banda", "Chitrakoot", "Hamirpur", "Mahoba"],
-    Devipatan: ["Balrampur", "Gonda", "Bharaich", "Shravasti"],
+    Devipatan: ["Balrampur", "Gonda", "Bahraich", "Shravasti"],
     Gorakhpur: ["Gorakhpur", "Deoria", "Kushinagar", "Maharajganj"],
     Jhansi: ["Jhansi", "Jalaun", "Lalitpur"],
     Kanpur: [
