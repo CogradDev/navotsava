@@ -17,6 +17,7 @@ import MeetTeam from "./components/meetteam.jsx";
 import CountdownTimer from "./components/counter.jsx";
 import ApplyForAward from "./components/award.jsx";
 import RoutePlan from "./components/routeplan.jsx";
+import CommitteeTable from "./components/committee.jsx";
 const All = () => {
   return (
     <>
@@ -24,10 +25,11 @@ const All = () => {
       <CountdownTimer />
       <Moto />
       <EventDetails />
-      <RoutePlan /> 
+      <RoutePlan />
       <ApplyForAward />
       <EventAgenda />
       <MeetTeam />
+      <CommitteeTable />
       <Payment />
       {/* <FeedbackForm /> */}
       <Footer />
