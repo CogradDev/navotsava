@@ -28,7 +28,7 @@ const All = () => {
       <RoutePlan />
       <ApplyForAward />
       <EventAgenda />
-      <MeetTeam />
+      {/* <MeetTeam /> */}
       <CommitteeTable />
       <Payment />
       {/* <FeedbackForm /> */}

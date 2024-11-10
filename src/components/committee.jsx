@@ -113,7 +113,7 @@ const CommitteeTable = () => {
   ];
 
   return (
-    <div className="bg-gray-50 min-h-screen p-10 flex items-center justify-center">
+    <div className="bg-green-50 min-h-screen p-10 flex items-center justify-center">
       <div className="container mx-auto max-w-5xl">
         <h1 className="mb-3 text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-bold leading-tight tracking-tight text-green-800">
           Committee List
