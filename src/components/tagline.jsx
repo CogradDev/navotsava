@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 export const Tagline = () => {
   const navigate = useNavigate();
-  const deadline = new Date("2024-11-10");
+  const deadline = new Date("2024-11-13");
   const [isRegistrationOpen, setIsRegistrationOpen] = useState(true);
 
   useEffect(() => {
