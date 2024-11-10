@@ -18,18 +18,20 @@ const ApplyForAward = () => {
           Navotsav 2024 Award
         </h2>
         <p className="text-lg mb-6 text-gray-700">
-          The <strong className="text-orange-600">Navotsav 2024 Award</strong>{" "}
-          celebrates the most innovative and transformative projects in
-          technology, design, and sustainability. This prestigious award honors
-          creators who have made groundbreaking contributions in their
-          respective fields. Don’t miss your chance to showcase your innovation
-          and be a part of Navotsav's legacy!
+          This award celebrates excellence in various fields, from the arts to sciences and beyond. Honorees are individuals who have
+          achieved remarkable milestones in their careers, showcasing innovation, leadership, and commitment to their profession.
+          Their achievements elevate their fields and inspire others to strive for greatness. We encourage nominations for individuals
+          who exemplify these qualities and have made a notable impact. Together, let's honour those who are making a difference
+          and continue to inspire future generations.
+          Please write to us at <strong className="text-orange-600">awards@navotsava.in</strong> along with the document.
         </p>
 
         {/* Apply Button */}
-        <button className="bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:ring-2 focus:ring-orange-300">
-          Apply Now
-        </button>
+        <a href='/Navodaya-Ratna-Award.docx' download="Navodaya-Ratna-Award.doc" target="_blank" rel="noopener noreferrer">
+          <button className="bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:ring-2 focus:ring-orange-300">
+            Download Document
+          </button>
+        </a>
       </div>
     </div>
   );

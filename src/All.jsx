@@ -24,8 +24,8 @@ const All = () => {
       <CountdownTimer />
       <Moto />
       <EventDetails />
-      <RoutePlan />
-      {/* <ApplyForAward /> */}
+      <RoutePlan /> 
+      <ApplyForAward />
       <EventAgenda />
       <MeetTeam />
       <Payment />
