@@ -51,14 +51,15 @@ export const EventDetails = () => {
                 </div>
               </div>
               {/* Google Maps Link */}
-              <div className="mt-4 lg:ml-12 text-blue-600 hover:text-blue-800">
+              <div className="mt-4 lg:ml-12">
                 <a
                   href="https://maps.app.goo.gl/sTMDK1DbaXLouCey8"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-lg sm:text-xl lg:text-2xl font-medium underline"
                 >
-                  View on Google Maps
+                  <button className="px-4 py-2 text-md sm:text-lg lg:text-xl font-semibold text-white bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-700 hover:to-blue-900 rounded-full shadow-lg hover:shadow-xl transform transition duration-300 ">
+                    Get Directions
+                  </button>
                 </a>
               </div>
             </div>

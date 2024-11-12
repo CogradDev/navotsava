@@ -18,6 +18,7 @@ import CountdownTimer from "./components/counter.jsx";
 import ApplyForAward from "./components/award.jsx";
 import RoutePlan from "./components/routeplan.jsx";
 import CommitteeTable from "./components/committee.jsx";
+import SocialMediaCarousel from "./components/Socialmedia.jsx";
 const All = () => {
   return (
     <>
@@ -25,6 +26,7 @@ const All = () => {
       <CountdownTimer />
       <Moto />
       <EventDetails />
+      <SocialMediaCarousel />
       <RoutePlan />
       <ApplyForAward />
       <EventAgenda />

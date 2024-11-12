@@ -106,7 +106,7 @@ const RoutePlan = () => {
           {routes.slice(0, 2).map((route, index) => (
             <div
               key={index}
-              className={`relative border border-gray-300 rounded-3xl p-6 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 ${route.bgColor} backdrop-filter backdrop-blur-lg hover:bg-opacity-95`}
+              className={`relative border border-gray-300 rounded-3xl p-6 shadow-lg  transition-all duration-500 ${route.bgColor} backdrop-filter backdrop-blur-lg hover:bg-opacity-95`}
             >
               {/* Route Badge */}
               <div className="absolute top-2 right-2 bg-white p-2 rounded-full shadow-md">
@@ -193,7 +193,7 @@ const RoutePlan = () => {
           {routes.slice(2).map((route, index) => (
             <div
               key={index}
-              className={`relative border border-gray-300 rounded-3xl p-6 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 ${route.bgColor} backdrop-filter backdrop-blur-lg hover:bg-opacity-95`}
+              className={`relative border border-gray-300 rounded-3xl p-6 shadow-lg   transition-all duration-500 ${route.bgColor} backdrop-filter backdrop-blur-lg hover:bg-opacity-95`}
             >
               {/* Route Badge */}
               <div className="absolute top-2 right-2 bg-white p-2 rounded-full shadow-md">

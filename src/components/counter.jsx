@@ -45,7 +45,7 @@ const CountdownTimer = () => {
           return (
             <div
               key={index}
-              className="bg-red-600 rounded-lg px-3 py-2 md:px-6 md:py-4 shadow-lg transform hover:scale-105 transition duration-300 text-center mx-2 my-2"
+              className="bg-red-600 rounded-lg px-3 py-2 md:px-6 md:py-4 shadow-lg  transition duration-300 text-center mx-2 my-2"
             >
               <span className="text-4xl font-bold text-white">{value}</span>
               <span className="block text-sm text-gray-200">{label}</span>

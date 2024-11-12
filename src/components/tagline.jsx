@@ -54,7 +54,7 @@ export const Tagline = () => {
           Navotsav
         </h1>
         <h1
-          className="text-4xl font-medium sm:text-5xl md:text-6xl mb-32 sm:mb-36"
+          className="text-4xl font-medium sm:text-5xl md:text-6xl mb-32 sm:mb-48"
           style={{ color: "rgb(255, 153, 51)" }} // Saffron color for 2024
         >
           2024
@@ -62,7 +62,7 @@ export const Tagline = () => {
       </div>
 
       {/* Main Tagline (with fixed 96px distance from 2024) */}
-      <div className="relative flex flex-col items-center z-10 mt-56">
+      <div className="relative flex flex-col items-center z-10 mt-48">
         <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold">
           <span className="text-orange-500">Connect.</span>
           <span className="text-blue-500"> Collaborate.</span>
@@ -79,7 +79,7 @@ export const Tagline = () => {
               Register Now
             </button>
             <p className="text-red-600 mt-8 sm:mt-4 text-2xl ">
-              Register Before : {deadline.toDateString()}
+              {/* Register Before : {deadline.toDateString()} */}
             </p>
           </>
         ) : (
