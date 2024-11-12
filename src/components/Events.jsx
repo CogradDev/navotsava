@@ -50,6 +50,17 @@ export const EventDetails = () => {
                   University, Greater Noida (U.P.)
                 </div>
               </div>
+              {/* Google Maps Link */}
+              <div className="mt-4 lg:ml-12 text-blue-600 hover:text-blue-800">
+                <a
+                  href="https://maps.app.goo.gl/sTMDK1DbaXLouCey8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg sm:text-xl lg:text-2xl font-medium underline"
+                >
+                  View on Google Maps
+                </a>
+              </div>
             </div>
           </div>
 
