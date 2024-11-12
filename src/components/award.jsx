@@ -2,10 +2,10 @@ import React from "react";
 
 const ApplyForAward = () => {
   return (
-    <div className="w-full mx-auto p-6 mt-4 bg-gradient-to-r from-orange-200 via-white to-green-200 text-gray-900 shadow-lg flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-4 ">
+    <div className="w-full mx-auto p-6 bg-gradient-to-r from-orange-200 via-white to-green-200 text-gray-900 shadow-lg flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-4 ">
       {/* Right Section: Award Information */}
       <div className="md:w-1/2 w-full text-center md:text-center">
-        <h2 className="text-4xl lg:text-center  font-extrabold mb-4 text-green-800">
+        <h2 className="text-4xl lg:text-center  font-extrabold mb-4 text-orange-600">
           Navotsav Yatra
         </h2>
         <p className="text-lg  mb-6 text-gray-700">
@@ -24,12 +24,16 @@ const ApplyForAward = () => {
           and contribute towards future endeavors.
         </p>
 
-        {/* Apply Button
-        <a href='/Navodaya-Ratna-Award.docx' download="Navodaya-Ratna-Award.doc" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://docs.google.com/spreadsheets/d/1MPK_x7unLiiDrXP_-eIk6UIwDjQ9fRYv2q-vZPL1CLk/edit?usp=sharing"
+          download="Navodaya-Ratna-Award.doc"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button className="bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:ring-2 focus:ring-orange-300">
-            Download Document
+            Look for your friends
           </button>
-        </a> */}
+        </a>
       </div>
       {/* Left Section: Award Image */}
       <div className="md:w-1/2 w-full  flex justify-center">

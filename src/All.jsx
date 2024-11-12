@@ -19,6 +19,7 @@ import ApplyForAward from "./components/award.jsx";
 import RoutePlan from "./components/routeplan.jsx";
 import CommitteeTable from "./components/committee.jsx";
 import SocialMediaCarousel from "./components/Socialmedia.jsx";
+import Join from "./components/Join.jsx";
 const All = () => {
   return (
     <>
@@ -27,12 +28,14 @@ const All = () => {
       <Moto />
       <EventDetails />
       <SocialMediaCarousel />
-      <RoutePlan />
       <ApplyForAward />
+      <Join />
       <EventAgenda />
       {/* <MeetTeam /> */}
       <CommitteeTable />
       <Payment />
+      <RoutePlan />
+
       {/* <FeedbackForm /> */}
       <Footer />
     </>
