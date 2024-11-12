@@ -97,7 +97,7 @@ const RoutePlan = () => {
   return (
     <div className="min-h-screen bg-white py-8 px-4">
       <h1 className="text-4xl lg:text-5xl text-center font-extrabold mb-10 lg:mb-16 text-orange-500 tracking-wide drop-shadow-md">
-        We touch 76 Navodaya within a month
+        Route Plan Across JNV's
       </h1>
 
       <div className="flex flex-col lg:flex-row gap-8 justify-center items-stretch">

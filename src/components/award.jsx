@@ -2,20 +2,27 @@ import React from "react";
 
 const ApplyForAward = () => {
   return (
-    <div className="w-full mx-auto p-6 mt-4 bg-gradient-to-r from-orange-200 via-white to-green-200 text-gray-900 shadow-lg flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 ">
+    <div className="w-full mx-auto p-6 mt-4 bg-gradient-to-r from-orange-200 via-white to-green-200 text-gray-900 shadow-lg flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-4 ">
       {/* Right Section: Award Information */}
-      <div className="md:w-1/2 w-full text-center md:text-left">
+      <div className="md:w-1/2 w-full text-center md:text-center">
         <h2 className="text-4xl lg:text-center  font-extrabold mb-4 text-green-800">
-          Navotsav 2024 Award
+          Navotsav Yatra
         </h2>
-        {/* <p className="text-lg mb-6 text-gray-700">
-          This award celebrates excellence in various fields, from the arts to sciences and beyond. Honorees are individuals who have
-          achieved remarkable milestones in their careers, showcasing innovation, leadership, and commitment to their profession.
-          Their achievements elevate their fields and inspire others to strive for greatness. We encourage nominations for individuals
-          who exemplify these qualities and have made a notable impact. Together, let's honour those who are making a difference
-          and continue to inspire future generations.
-          Please write to us at <strong className="text-orange-600">awards@navotsava.in</strong> along with the document.
-        </p> */}
+        <p className="text-lg  mb-6 text-gray-700">
+          The Navotsava Yatra was an inspiring journey where our team traveled
+          across 76 Jawahar Navodaya Vidyalayas (JNVs) in Uttar Pradesh to
+          personally deliver invitations for the upcoming Navotsava celebration.
+          This unique yatra was not only a way to formally invite alumni,
+          teachers, and students but also to reconnect with the Navodaya
+          community and rekindle the spirit of unity, collaboration, and pride
+          among its members. Through each visit, the team engaged with school
+          leaders, shared the vision for Navotsava, and encouraged participation
+          in this event, which celebrates the achievements and contributions of
+          Navodaya alumni. The journey embodied the Navodaya spirit, fostering a
+          deep sense of connection and anticipation for the event, where past
+          and present Navodayans can come together to share experiences, learn,
+          and contribute towards future endeavors.
+        </p>
 
         {/* Apply Button
         <a href='/Navodaya-Ratna-Award.docx' download="Navodaya-Ratna-Award.doc" target="_blank" rel="noopener noreferrer">

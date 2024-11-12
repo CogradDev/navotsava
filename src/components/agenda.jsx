@@ -42,16 +42,17 @@ export const EventAgenda = () => {
       description: "Served at designated place",
     },
     { time: "17.11.2024, Sunday", isDate: true },
+
+    {
+      time: "8:00-10:00",
+      title: "Breakfast",
+      description: "To be served at designated place",
+    },
     {
       time: "8:30 Onwards",
       title: "Registration",
       description:
         "Welcoming & registration activity for all participants at counters",
-    },
-    {
-      time: "8:00-10:00",
-      title: "Breakfast",
-      description: "To be served at designated place",
     },
     {
       time: "10:00-10:30",
