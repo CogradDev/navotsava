@@ -34,7 +34,7 @@ const Join = () => {
           rel="noopener noreferrer"
         >
           <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:ring-2 focus:ring-green-300">
-            Join with us
+            Join
           </button>
         </a>
       </div>
