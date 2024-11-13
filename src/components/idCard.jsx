@@ -700,7 +700,7 @@ const Appy = () => {
                 Submit
               </button>
               <div className="warning">
-                Registration is only valid till 12/11/2024
+                Registration is only valid till 15/11/2024
               </div>
             </form>
           </>
