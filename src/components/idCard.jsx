@@ -249,10 +249,10 @@ const Appy = () => {
     setLoading(true);
 
     const today = new Date();
-    const cutoffDate = new Date(today.getFullYear(), 10, 13); // November 12th of this year
+    const cutoffDate = new Date(today.getFullYear(), 10, 16); // November 12th of this year
 
     if (today > cutoffDate) {
-      alert("Submissions are closed after November 12th."); // Alert for date condition
+      alert("Submissions are closed after November 15th."); // Alert for date condition
       setLoading(false); // Hide loader if date condition is not met
       return; // Stop further execution
     }
