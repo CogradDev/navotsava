@@ -249,7 +249,7 @@ const Appy = () => {
     setLoading(true);
 
     const today = new Date();
-    const cutoffDate = new Date(today.getFullYear(), 10, 15); // November 14th of this year
+    const cutoffDate = new Date(today.getFullYear(), 10, 18); // November 17th of this year
 
     if (today > cutoffDate) {
       alert("Submissions are closed after November 15th."); // Alert for date condition
@@ -700,7 +700,7 @@ const Appy = () => {
                 Submit
               </button>
               <div className="warning">
-                Registration is only valid till 14/11/2024
+                Registration is only valid till 17/11/2024
               </div>
             </form>
           </>
