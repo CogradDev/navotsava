@@ -29,7 +29,6 @@ const LivePage = () => {
 
   const handleRetry = () => {
     setIsLiveError(false);
-    // Optionally, you can re-attempt to set the embedURL here
     if (youtubeURL) {
       const videoID = extractYouTubeID(youtubeURL);
       if (videoID) {
@@ -41,18 +40,27 @@ const LivePage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-500 via-blue-400 to-green-500 flex flex-col items-center justify-between p-6">
-      <header className="text-center">
-        <h1 className="text-4xl lg:text-5xl font-extrabold text-white mb-4 drop-shadow-md">
-          🎥 Live Event
-        </h1>
-        <p className="text-lg lg:text-xl text-gray-100">
-          Experience the excitement, join us live, and never miss a moment!
-        </p>
-      </header>
+    <div className="min-h-screen bg-gradient-to-br from-orange-300 via-blue-400 to-green-500 flex flex-col items-center justify-between p-4">
+      <div className="flex flex-col sm:flex-row items-center justify-center w-full sm:w-auto sm:left-24 sm:mb-0 mb-2">
+        <div className="w-full sm:w-auto mb-3 sm:mb-0">
+          <img
+            src="./logonewwithoutbg.png"
+            alt="Event Logo"
+            className="w-32 h-32 sm:w-36 sm:h-32 object-contain mx-auto sm:mx-0"
+          />
+        </div>
+        <div className="text-center sm:text-left sm:ml-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-4 drop-shadow-md">
+            Navotsav Live Event
+          </h1>
+          <p className="text-lg lg:text-xl text-gray-100">
+            Experience the excitement, join us live, and never miss a moment!
+          </p>
+        </div>
+      </div>
 
       {/* Live Stream Section */}
-      <div className="w-full max-w-6xl flex justify-center my-8">
+      <div className=" w-full h-96 max-w-6xl flex justify-center my-12">
         {isLiveError ? (
           <div className="bg-white p-6 rounded-lg shadow-xl text-center max-w-lg mx-auto">
             <h2 className="text-2xl font-semibold text-red-600 mb-4">
@@ -100,7 +108,7 @@ const LivePage = () => {
       </div>
 
       {/* Social Media Links */}
-      <footer className="w-full py-6">
+      <footer className="w-full py-4">
         <div className="flex justify-center space-x-6">
           {[
             {
@@ -138,8 +146,9 @@ const LivePage = () => {
             </a>
           ))}
         </div>
-        <p className="mt-6 text-center text-gray-200 text-sm">
-          © {new Date().getFullYear()} Cograd. All rights reserved.
+        <p className="mt-4 text-center text-gray-200 text-sm">
+          © {new Date().getFullYear()} Made with love by Cograd. All rights
+          reserved.
         </p>
       </footer>
     </div>
