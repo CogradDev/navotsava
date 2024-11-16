@@ -16,6 +16,9 @@ export const Tagline = () => {
   const handleNavigation = () => {
     navigate("/idcard");
   };
+  const handleEvent = () => {
+    navigate("/live");
+  };
 
   return (
     <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
@@ -85,6 +88,12 @@ export const Tagline = () => {
         ) : (
           <p className="text-red-500 mt-4 text-lg">Registration Closed</p>
         )}
+        <button
+          onClick={handleEvent}
+          className="bg-blue-600 mt-3 hover:bg-blue-700 text-white py-3 px-6 sm:px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 "
+        >
+          See Live Event
+        </button>
       </div>
     </section>
   );
