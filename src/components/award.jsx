@@ -25,7 +25,7 @@ const ApplyForAward = () => {
         </p>
 
         <a
-          href="https://docs.google.com/spreadsheets/d/1MPK_x7unLiiDrXP_-eIk6UIwDjQ9fRYv2q-vZPL1CLk/edit?usp=sharing"
+          href="https://b0x.app/f/NFVdGsQj?tag=navotsava"
           download="Navodaya-Ratna-Award.doc"
           target="_blank"
           rel="noopener noreferrer"
