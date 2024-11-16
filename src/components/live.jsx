@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const LivePage = () => {
@@ -41,7 +41,7 @@ const LivePage = () => {
           <div className="w-full aspect-video bg-black rounded-xl overflow-hidden shadow-lg relative">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/live_stream?channel=CHANNEL_ID" // Replace CHANNEL_ID with your YouTube channel ID
+              src="" // YouTube Embed URL
               title="YouTube Live Stream"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
