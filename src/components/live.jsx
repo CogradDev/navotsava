@@ -1,11 +1,43 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import { YouTubeURLContext } from "./YoutubeContext";
 
 const LivePage = () => {
   const [isLiveError, setIsLiveError] = useState(false);
+  const { youtubeURL } = useContext(YouTubeURLContext);
+  const [embedURL, setEmbedURL] = useState("");
+
+  useEffect(() => {
+    if (youtubeURL) {
+      const videoID = extractYouTubeID(youtubeURL);
+      if (videoID) {
+        setEmbedURL(`https://www.youtube.com/embed/${videoID}?autoplay=1`);
+      } else {
+        setIsLiveError(true);
+      }
+    } else {
+      setIsLiveError(true);
+    }
+  }, [youtubeURL]);
+
+  const extractYouTubeID = (url) => {
+    const regex =
+      /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+    const match = url.match(regex);
+    return match ? match[1] : null;
+  };
 
   const handleRetry = () => {
     setIsLiveError(false);
+    // Optionally, you can re-attempt to set the embedURL here
+    if (youtubeURL) {
+      const videoID = extractYouTubeID(youtubeURL);
+      if (videoID) {
+        setEmbedURL(`https://www.youtube.com/embed/${videoID}?autoplay=1`);
+      } else {
+        setIsLiveError(true);
+      }
+    }
   };
 
   return (
@@ -37,17 +69,32 @@ const LivePage = () => {
               Retry
             </button>
           </div>
-        ) : (
+        ) : embedURL ? (
           <div className="w-full aspect-video bg-black rounded-xl overflow-hidden shadow-lg relative">
             <iframe
               className="w-full h-full"
-              src="" // YouTube Embed URL
+              src={embedURL}
               title="YouTube Live Stream"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               onError={() => setIsLiveError(true)}
             ></iframe>
+          </div>
+        ) : (
+          <div className="bg-white p-6 rounded-lg shadow-xl text-center max-w-lg mx-auto">
+            <h2 className="text-2xl font-semibold text-yellow-600 mb-4">
+              No YouTube URL Set
+            </h2>
+            <p className="text-gray-600 mb-6">
+              Please set the YouTube URL on the "Set YouTube URL" page.
+            </p>
+            <button
+              onClick={() => (window.location.href = "/set-url")}
+              className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg transition-transform duration-300 hover:scale-105"
+            >
+              Go to Set URL
+            </button>
           </div>
         )}
       </div>
