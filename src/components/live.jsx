@@ -1,49 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const LivePage = () => {
-  const [isLiveError, setIsLiveError] = useState(false);
-  const [embedURL, setEmbedURL] = useState("");
-
-  useEffect(() => {
-    const savedURL = localStorage.getItem("youtubeURL");
-    if (savedURL) {
-      const videoID = extractYouTubeID(savedURL);
-      if (videoID) {
-        setEmbedURL(`https://www.youtube.com/embed/${videoID}?autoplay=1`);
-      } else {
-        setIsLiveError(true);
-      }
-    } else {
-      setIsLiveError(true);
-    }
-  }, []);
-
-  const extractYouTubeID = (url) => {
-    const regex =
-      /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/|live\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
-    const match = url.match(regex);
-    return match ? match[1] : null;
-  };
-
-  const handleSetURL = () => {
-    const newURL = prompt("Enter the YouTube Live URL:");
-    if (newURL) {
-      const videoID = extractYouTubeID(newURL);
-      if (videoID) {
-        localStorage.setItem("youtubeURL", newURL);
-        setEmbedURL(`https://www.youtube.com/embed/${videoID}?autoplay=1`);
-        setIsLiveError(false);
-      } else {
-        alert("Invalid YouTube URL. Please try again.");
-      }
-    }
+  // Redirect user to the YouTube live stream URL when they click the button
+  const handleClickURL = () => {
+    window.location.href =
+      "https://www.youtube.com/live/wE9mc0Xssro?si=7BRv-iCE5LYRzt_V";
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-300 via-blue-400 to-green-500 flex flex-col items-center justify-between p-4">
-      {/* Header */}
-      <div className="flex flex-col sm:flex-row items-center justify-center w-full sm:w-auto">
+    <div className="min-h-screen bg-gradient-to-br from-orange-300 via-blue-400 to-green-500 flex flex-col items-center justify-between p-6">
+      {/* Header Section */}
+      <header className="flex flex-col sm:flex-row items-center justify-center w-full sm:w-auto mb-8">
         <div className="w-full sm:w-auto mb-4 sm:mb-0">
           <img
             src="./logonewwithoutbg.png"
@@ -52,46 +20,28 @@ const LivePage = () => {
           />
         </div>
         <div className="text-center sm:text-left sm:ml-6">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-md">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg">
             Navotsav Live Event
           </h1>
         </div>
+      </header>
+
+      {/* YouTube URL Section */}
+      <div className="mt-6 text-center">
+        <p className="text-white text-lg mb-4">
+          Please click to watch:
+        </p>
+        <button
+          onClick={handleClickURL}
+          className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+        >
+          Watch Live Stream
+        </button>
       </div>
 
-      {/* Live Stream Section */}
-      <div className="w-full max-w-screen-lg flex justify-center my-12">
-        {isLiveError ? (
-          <div className=" p-6 rounded-lg shadow-xl text-center max-w-lg mx-auto">
-            {/* <h2 className="text-2xl font-semibold text-red-600 mb-4">
-              Oops! Live Stream is not available.
-            </h2>
-            <p className="text-gray-600 mb-6">
-              Please set the YouTube URL for the live stream.
-            </p> */}
-            <button
-              onClick={handleSetURL}
-              className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg transition-transform duration-300 hover:scale-105"
-            >
-              Set Live URL
-            </button>
-          </div>
-        ) : (
-          <div className="w-full aspect-video bg-black rounded-xl overflow-hidden shadow-lg relative">
-            <iframe
-              className="w-full h-full"
-              src={embedURL}
-              title="YouTube Live Stream"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
-        )}
-      </div>
-
-      {/* Footer */}
-      <footer className="w-full py-4">
-        <p className="text-center text-gray-200 text-sm">
+      {/* Footer Section */}
+      <footer className="w-full py-4 mt-8 bg-white bg-opacity-20 rounded-t-xl">
+        <p className="text-center text-gray-300 text-sm">
           © {new Date().getFullYear()} Made with love by
         </p>
         <p
@@ -104,30 +54,26 @@ const LivePage = () => {
             className="w-36 h-10 mx-auto hover:opacity-90 transition-opacity duration-300"
           />
         </p>
-        <p className="text-center text-gray-200 text-sm mb-2">
+        <p className="text-center text-gray-300 text-sm mb-4">
           All rights reserved.
         </p>
-        <div className="flex justify-center space-x-6">
+        <div className="flex justify-center space-x-6 mb-4">
           {[
             {
               href: "https://www.facebook.com/profile.php?id=61560781570736",
               icon: <FaFacebookF />,
-              label: "Facebook",
             },
             {
               href: "https://x.com/UPjnvopenmeet",
               icon: <FaTwitter />,
-              label: "Twitter",
             },
             {
               href: "https://www.instagram.com/upstatenavodayaalumniopenmeet/",
               icon: <FaInstagram />,
-              label: "Instagram",
             },
             {
               href: "https://www.youtube.com/@UPStateNavodayaAlumniOpenMeet",
               icon: <FaYoutube />,
-              label: "YouTube",
             },
           ].map((social, index) => (
             <a
@@ -140,7 +86,6 @@ const LivePage = () => {
               <div className="p-4 bg-white bg-opacity-20 rounded-full shadow-lg">
                 {social.icon}
               </div>
-              <span className="text-sm md:text-base">{social.label}</span>
             </a>
           ))}
         </div>
