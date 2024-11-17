@@ -61,13 +61,13 @@ const LivePage = () => {
       {/* Live Stream Section */}
       <div className="w-full max-w-screen-lg flex justify-center my-12">
         {isLiveError ? (
-          <div className="bg-white p-6 rounded-lg shadow-xl text-center max-w-lg mx-auto">
-            <h2 className="text-2xl font-semibold text-red-600 mb-4">
+          <div className=" p-6 rounded-lg shadow-xl text-center max-w-lg mx-auto">
+            {/* <h2 className="text-2xl font-semibold text-red-600 mb-4">
               Oops! Live Stream is not available.
             </h2>
             <p className="text-gray-600 mb-6">
               Please set the YouTube URL for the live stream.
-            </p>
+            </p> */}
             <button
               onClick={handleSetURL}
               className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg transition-transform duration-300 hover:scale-105"
