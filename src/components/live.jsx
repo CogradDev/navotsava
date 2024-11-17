@@ -28,9 +28,7 @@ const LivePage = () => {
 
       {/* YouTube URL Section */}
       <div className="mt-6 text-center">
-        <p className="text-white text-lg mb-4">
-          Please click to watch:
-        </p>
+        <p className="text-white text-lg mb-4">Please click to watch:</p>
         <button
           onClick={handleClickURL}
           className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
