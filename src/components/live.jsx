@@ -48,7 +48,7 @@ const LivePage = () => {
           <img
             src="./logonewwithoutbg.png"
             alt="Event Logo"
-            className="w-32 h-32 sm:w-36 sm:h-32 object-contain mx-auto sm:mx-0"
+            className="w-32 h-32 sm:w-36 sm:h-28 object-contain mx-auto sm:mx-0"
           />
         </div>
         <div className="text-center sm:text-left sm:ml-6">
@@ -59,27 +59,27 @@ const LivePage = () => {
       </div>
 
       {/* Live Stream Section */}
-      <div className="w-full h-96 max-w-6xl flex justify-center my-12">
+      <div className="w-full h-1/4 max-w-screen-lg flex justify-center my-4">
         {isLiveError ? (
-          <div className="bg-white p-6 rounded-lg shadow-xl text-center max-w-lg mx-auto">
-            <h2 className="text-2xl font-semibold text-red-600 mb-4">
-              Oops! Live Stream is Unavailable.
-            </h2>
-            <p className="text-gray-600 mb-6">
+          <div className=" p-6 rounded-lg text-center max-w-lg mx-auto">
+            {/* <h2 className="text-2xl font-semibold text-red-600 mb-4">
+             Live Stream is disturbed.
+            </h2> */}
+            {/* <p className="text-gray-600 mb-6">
               We're experiencing some technical difficulties. Please retry in a
               moment.
-            </p>
+            </p> */}
             <button
               onClick={handleRetry}
               className="bg-red-500 hover:bg-red-600 text-white py-3 px-6 rounded-lg transition-transform duration-300 hover:scale-105"
             >
-              Retry
+              Click to Watch
             </button>
           </div>
         ) : embedURL ? (
-          <div className="w-full aspect-video bg-black rounded-xl overflow-hidden shadow-lg relative">
+          <div className="w-full bg-black rounded-xl overflow-hidden shadow-lg relative">
             <iframe
-              className="w-full h-full"
+              className="w-full h-[calc(100vw*9/16)] max-h-[80vh] rounded-xl"
               src={embedURL}
               title="YouTube Live Stream"
               frameBorder="0"
