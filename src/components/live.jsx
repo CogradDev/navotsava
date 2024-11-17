@@ -112,10 +112,14 @@ const LivePage = () => {
           © {new Date().getFullYear()} Made with love by
         </p>
         <p
-          className="text-center text-blue-700 text-lg cursor-pointer hover:underline mt-1 leading-tight"
+          className="text-center cursor-pointer mt-1 leading-tight"
           onClick={() => (window.location.href = "https://cograd.in")}
         >
-          Cograd
+          <img
+            src="./cograd.png"
+            alt="Cograd Logo"
+            className="w-36 h-10 mx-auto hover:opacity-90 transition-opacity duration-300"
+          />
         </p>
         <p className="text-center text-gray-200 text-sm mb-2">
           All rights reserved.
