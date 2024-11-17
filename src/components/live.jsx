@@ -22,7 +22,8 @@ const LivePage = () => {
 
   const extractYouTubeID = (url) => {
     const regex =
-      /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+      /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/|live\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+
     const match = url.match(regex);
     return match ? match[1] : null;
   };
@@ -41,8 +42,9 @@ const LivePage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-300 via-blue-400 to-green-500 flex flex-col items-center justify-between p-4">
-      <div className="flex flex-col sm:flex-row items-center justify-center w-full sm:w-auto sm:left-24 sm:mb-0 mb-2">
-        <div className="w-full sm:w-auto mb-3 sm:mb-0">
+      {/* Header */}
+      <div className="flex flex-col sm:flex-row items-center justify-center w-full sm:w-auto ">
+        <div className="w-full sm:w-auto mb-4 sm:mb-0">
           <img
             src="./logonewwithoutbg.png"
             alt="Event Logo"
@@ -50,17 +52,14 @@ const LivePage = () => {
           />
         </div>
         <div className="text-center sm:text-left sm:ml-6">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-4 drop-shadow-md">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-md">
             Navotsav Live Event
           </h1>
-          <p className="text-lg lg:text-xl text-gray-100">
-            Experience the excitement, join us live, and never miss a moment!
-          </p>
         </div>
       </div>
 
       {/* Live Stream Section */}
-      <div className=" w-full h-96 max-w-6xl flex justify-center my-12">
+      <div className="w-full h-96 max-w-6xl flex justify-center my-12">
         {isLiveError ? (
           <div className="bg-white p-6 rounded-lg shadow-xl text-center max-w-lg mx-auto">
             <h2 className="text-2xl font-semibold text-red-600 mb-4">
@@ -109,6 +108,18 @@ const LivePage = () => {
 
       {/* Social Media Links */}
       <footer className="w-full py-4">
+        <p className="text-center text-gray-200 text-sm">
+          © {new Date().getFullYear()} Made with love by
+        </p>
+        <p
+          className="text-center text-blue-700 text-lg cursor-pointer hover:underline mt-1 leading-tight"
+          onClick={() => (window.location.href = "https://cograd.in")}
+        >
+          Cograd
+        </p>
+        <p className="text-center text-gray-200 text-sm mb-2">
+          All rights reserved.
+        </p>
         <div className="flex justify-center space-x-6">
           {[
             {
@@ -146,10 +157,6 @@ const LivePage = () => {
             </a>
           ))}
         </div>
-        <p className="mt-4 text-center text-gray-200 text-sm">
-          © {new Date().getFullYear()} Made with love by Cograd. All rights
-          reserved.
-        </p>
       </footer>
     </div>
   );
