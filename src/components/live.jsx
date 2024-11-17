@@ -52,7 +52,7 @@ const LivePage = () => {
           />
         </div>
         <div className="text-center sm:text-left sm:ml-6">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-md">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl sm:mt-0 mt-8 font-extrabold text-white drop-shadow-md">
             Navotsav Live Event
           </h1>
         </div>
@@ -107,7 +107,7 @@ const LivePage = () => {
       </div>
 
       {/* Social Media Links */}
-      <footer className="w-full py-4">
+      <footer className="w-full mb-4">
         <p className="text-center text-gray-200 text-sm">
           © {new Date().getFullYear()} Made with love by
         </p>
@@ -121,7 +121,7 @@ const LivePage = () => {
             className="w-36 h-10 mx-auto hover:opacity-90 transition-opacity duration-300"
           />
         </p>
-        <p className="text-center text-gray-200 text-sm mb-2">
+        <p className="text-center text-gray-200 text-sm mb-8">
           All rights reserved.
         </p>
         <div className="flex justify-center space-x-6">
